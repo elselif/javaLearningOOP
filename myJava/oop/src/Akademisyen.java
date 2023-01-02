@@ -1,4 +1,4 @@
-public class Akademisyen extends Calisan { // extends ile kalıtım sağlandı
+public abstract class Akademisyen extends Calisan { // extends ile kalıtım sağlandı
      
      //subclass ,superclass ile kalıtım yapıyorsa super classın constructoru çağrılmalı
 
@@ -29,10 +29,8 @@ public class Akademisyen extends Calisan { // extends ile kalıtım sağlandı
           this.unvan = unvan;
      }
 
-     public void dersVer()
-     {
-          System.out.println(this.getAdSoyad() + " ders verdi.");
-     }
+     public abstract void  dersVer(String dersSaati);
+     
 
      @Override
 
