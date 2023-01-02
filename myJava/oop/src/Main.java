@@ -2,9 +2,9 @@ public class Main {
      public static void main(String[] args) {
           Calisan c1 = new Calisan("elif emre", "534534535", "elffemre@gmail.com");
 
-          Akademisyen ak1 = new Akademisyen("elif", "45435", "deneme@gmail.com", "bilgisayar", "doçent");
+          Akademisyen a1 = new Akademisyen("elif", "45435", "deneme@gmail.com", "bilgisayar", "doçent");
 
-          ak1.giris();
+          a1.giris();
           
           // superclass, supclassın özelliklerine erişemez
           // supclass, superclassın özelliklerine erişebilir
@@ -28,5 +28,29 @@ public class Main {
           
           //ogretim görevlisi hem akademisyenden hem de calısanın özelliklerine sahip
 
+          a1.giris(); // override edilmiş metot çağrıldı - akademisyen sınıfında override edildi
+          //kendi içinde methodu geçersiz kıldı ve özelleştirdi
+
+          //Çok biçimlilik - polymorphism
+
+          //bir nesnenin birden fazla şekilde kullanılması
+
+
+          Calisan a2 = new Akademisyen("override", "45345", "elffemre", "bolümismi", "doktor");
+
+          a2.giris(); //ovverride edilmiş metot çağrıldı - akademisyen sınıfında override edildi - polymorphism
+          // aslında calisan sınfından oluşturuldu 
+          // a2.dersVer(); // akedemisyen sınıfında olmadığı için hata verir
+          
+          // polimorfizm - polymorphism - örnek
+
+          //int[] loginUser = new int[5];
+          Calisan[] loginUser = {c1,a1,m1,og1}; // polymorphism - çok biçimlilik - bir nesnenin birden fazla şekilde kullanılması
+
+          Calisan.girisYapanlar(loginUser); // static metot çağrıldı - polymorphism 
+          // polymorphism - çok biçimlilik - bir nesnenin birden fazla şekilde kullanılması
+
+          
+          
      }
 }

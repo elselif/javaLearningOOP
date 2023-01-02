@@ -28,5 +28,10 @@ public class Memur extends Calisan {
      {
           System.out.println(this.getAdSoyad() + " çalıştı.");
      }
+
+     @Override // override ile superclassın methodu ezildi
+     public void giris() {
+          System.out.println(this.getAdSoyad() + " memur olarak giriş yapıyor.");
+     }
      
 }
