@@ -1,3 +1,4 @@
+package opp;
 public abstract class Calisan {
      private String adSoyad;
      private  String telefon;

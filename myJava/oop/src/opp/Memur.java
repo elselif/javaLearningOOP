@@ -1,3 +1,4 @@
+package opp;
 public abstract class Memur extends Calisan {
      private String depertmant;
      private String mesai;

@@ -1,3 +1,4 @@
+package opp;
 public class OgretimGorevlisi extends Akademisyen{
      
      public String kapiNo;

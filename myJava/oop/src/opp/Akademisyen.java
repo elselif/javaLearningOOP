@@ -1,3 +1,4 @@
+package opp;
 public abstract class Akademisyen extends Calisan { // extends ile kalıtım sağlandı
      
      //subclass ,superclass ile kalıtım yapıyorsa super classın constructoru çağrılmalı
